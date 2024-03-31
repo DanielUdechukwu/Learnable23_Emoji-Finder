@@ -6,10 +6,8 @@ const Home = () => {
   const [userInput, setUserInput] = useState("");
   const [fetchedEmojis, setFetchedEmojis] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [endPoint, setEndPoint] = useState("");
 
   // Fetches a list of emojis on mount
-
   const getEmojis = async () => {
     try {
       setIsLoading(true);
@@ -35,13 +33,11 @@ const Home = () => {
   // Ends...
 
   // Gets User input onChange
-
   const handleInputChange = (e) => {
     setUserInput(e.target.value);
   };
 
   // Gets emojis from searched value, passed to the endpoint to search for relevant emojis, all onClick of the submit button
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setEndPoint(userInput);
