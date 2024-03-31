@@ -70,7 +70,9 @@ const Home = () => {
   return (
     <div className="min-h-screen relative bg-red-900">
       <div className="flex justify-center items-center h-[4rem]">
-        <p className="text-[3rem] font-medium text-[#e7decc]">Emoji Finder</p>
+        <p className="text-[2rem] lg:text-[3rem] font-medium text-[#e7decc]">
+          Emoji Finder
+        </p>
       </div>
       <div className="w-[90%] mx-auto">
         {isLoading ? (
