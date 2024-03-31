@@ -40,7 +40,7 @@ const Home = () => {
   // Gets emojis from searched value, passed to the endpoint to search for relevant emojis, all onClick of the submit button
   const handleSubmit = (e) => {
     e.preventDefault();
-    setEndPoint(userInput);
+    // setEndPoint(userInput);
 
     const getSearchedEmoji = async () => {
       try {
