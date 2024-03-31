@@ -91,7 +91,10 @@ const Home = () => {
           <div className="grid grid-cols-4 gap-4 lg:grid-cols-10">
             {fetchedEmojis.slice(0, 150).map((item, index) => {
               return (
-                <p className="text-[3rem] lg:text-[4rem]" key={index}>
+                <p
+                  className="text-[3rem] flex justify-center lg:text-[4rem]"
+                  key={index}
+                >
                   {item}
                 </p>
               );
